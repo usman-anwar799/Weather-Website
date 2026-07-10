@@ -1,0 +1,302 @@
+#temp {
+    font-family: "Patrick Hand", cursive;
+    font-size: 6vh;
+}
+
+body {
+    overflow: hidden;
+    /* background-color: aqua; */
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    /* background:linear-gradient(to bottom,#016ecd,#01c8d2); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transform: all;
+    transition-duration: 0.8s;
+}
+
+#title {
+    color: black;
+    font-size: 6vh;
+    color: rgba(0, 0, 0, 0.61);
+    font-family: "Patrick Hand", cursive;
+    margin: 5px;
+    font-size: 8vmin;
+    transform: all;
+    transition-duration: 0.8s;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+.both {
+    margin: 0px 0px 0px 10px;
+    font-size: 13vh;
+}
+
+#month-name {
+    position: relative;
+    font-family: "Patrick Hand", cursive;
+    margin: 0vmin 2vmin;
+    font-size: 8vh;
+}
+
+#year-name {
+    font-family: "Patrick Hand", cursive;
+    font-size: 8vh;
+}
+
+#date-name {
+    font-family: "Patrick Hand", cursive;
+    font-size: 8vh;
+}
+
+#container-2 {
+    /* background-color: white; */
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    /* margin: 10vh 0vh 0px 150vh; */
+    position: absolute;
+    right: 20vh;
+    top: 10vh;
+}
+
+/* #direction{
+    font-family: "Patrick Hand",cursive;
+    margin: 20vmin 6vmin;
+    font-size: 5vmin;
+} */
+#sun-rise-father {
+    /* background-color: white; */
+    display: flex;
+    font-family: "Patrick Hand", cursive;
+    position: absolute;
+    right: 30vh;
+    top: 23vh;
+}
+
+#sun-rise-father img {
+    /* mix-blend-mode: darken; */
+    mix-blend-mode: multiply;
+    
+}
+
+#sun-set-father {
+    /* background-color: white; */
+    display: flex;
+    font-family: "Patrick Hand", cursive;
+    position: absolute;
+    right: -15.5vh;
+    top: 08vh;
+    width: 40vh;
+}
+
+#sun-set-father img {
+    mix-blend-mode: darken;
+}
+
+.droplet-father {
+    /* background-color: white; */
+    position: absolute;
+    top: 18vh;
+    right: 7.9vh;
+    display: flex;
+    width: 150px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.droplet-father i {
+    margin: 0px 1.5vmin;
+}
+
+.droplet-father h2 {
+    margin: 0px 0.5vmin;
+}
+
+.wind-father {
+    /* background-color: white; */
+    position: absolute;
+    top: 23vh;
+    right: 0.2vh;
+    display: flex;
+    width: 200px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.compass-father {
+    /* background-color: rgb(255, 255, 255); */
+    position: absolute;
+    top: 28.5vh;
+    right: -2vh;
+    display: flex;
+    width: 200px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#direction {
+    font-family: "Patrick Hand", cursive;
+    font-size: 9vh;
+    margin: -2vh 13vh;
+}
+
+/* .dic-container{
+    background-color: rgba(255, 255, 255, 0.669);
+    display: block;
+    width: 120vh;
+    height: 160px;
+    position: absolute;
+    left: -670px;
+    top: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 24px;
+} */
+#more {
+    margin: 1px;
+    position: absolute;
+    left: 500px;
+    top: 550px;
+    border: 0px;
+    padding: 6px;
+    background-color: transparent;
+    border-radius: 7px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transform: all;
+    transition-duration: 0.8s;
+}
+
+#more1 {
+    margin: 1px;
+    position: absolute;
+    left: 600px;
+    top: 550px;
+    border: 0px;
+    padding: 6px;
+    background-color: transparent;
+    border-radius: 7px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: none;
+    transform: all;
+    transition-duration: 0.8s;
+}
+
+#more:hover,
+#more1:hover {
+    color: #0088ff;
+}
+
+.dic-container {
+    background-color: rgba(255, 255, 255, 0.669);
+    display: block;
+    width: 120vh;
+    height: 160px;
+    position: absolute;
+    left: -690px;
+    top: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 24px;
+
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.5s;
+}
+
+#low-temp {
+    display: none;
+}
+
+#high-temp {
+    display: none;
+}
+#dark{
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.717);
+    color: white;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    cursor: pointer;
+}
+#light{
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.717);
+    color: white;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+.sunrise-icon{
+    position: relative;
+    left: -10px;
+}
+.sunset-icon{
+    position: relative;
+    left: -10px;
+}
+.cun-temp{
+    font-family: "Patrick Hand", cursive;
+    font-size: 30px;
+    /* margin: 0px 0px 0px 400px; */
+    /* position: absolute; */
+    margin: 2px;
+    transition: all;
+}
+#searcher{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.country-searchbar{
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 0px;
+    position: relative;
+    z-index: 9999;
+    transition: all 0.8s;
+}
+.country-searchbar:hover{
+    background-color: rgb(246, 246, 246);
+}
+#searcher button{
+    background-color: #0088ff;
+    background-color: #43a1f3;
+    border: 0px;
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+#searcher button:hover{
+    background-color: #00e5ff;
+    padding: 7px 10px;
+    position: sticky;
+}

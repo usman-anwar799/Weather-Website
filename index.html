@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather Web</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Weather Web</h1>
+    <div>
+        <button id="dark">dark Mode</button>
+        <button id="light">light Mode</button>
+    </div>
+    <div id="container">
+        <img src="./1cool.png" width="55px" id="low-temp">
+        <img src="./high_temprature.png" id="hightmp" width="60px" id="high-temp">
+        <h1 id="temp" class="both"></h1>
+    </div>
+    <div id="searcher">
+        <h1 class="cun-temp"> &nbsp;&nbsp;&nbsp;</h1>
+        <div>
+            <input type="search" class="country-searchbar" placeholder="Search your country or state">
+            <button id="submit-btn">Search</button>
+        </div>
+    </div>
+    <div id="container-2">
+        <h1 id="date-name">date</h1>
+        <h1 id="month-name">Month</h1>
+        <h1 id="year-name">year</h1>
+    </div>
+    <h1 id="direction"></h1>
+    <div id="sun-rise-father">
+        <svg class="sunrise-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" width="30px" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0" />
+            <path d="M3 21l18 0" />
+            <path d="M12 9v-6l3 3m-6 0l3 -3" />
+        </svg>
+        <h2 id="sun-rise"></h2>
+        <div id="sun-set-father">
+            <!-- <img src="/image/sun set.png" alt="" width="35vh" height="35vh" style="margin: 2.2vh 1vh;" id="sunset"> -->
+            <svg class="sunset-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" width="30px" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0" />
+                <path d="M3 21l18 0" />
+                <path d="M12 3v6l3 -3m-6 0l3 3" />
+            </svg>
+            <h2 id="sun-set"></h2>
+        </div>
+        <div class="droplet-father">
+            <i class="fa-solid fa-droplet" id="droplet"></i>
+            <h2 id="humidity">&nbsp;</h2>
+        </div>
+        <div class="wind-father">
+            <i class="fa-solid fa-wind" id="wind"></i>
+            <h2 id="wind-speed">&nbsp;&nbsp;</h2>
+        </div>
+        <div class="compass-father">
+            <i class="fa-regular fa-compass"></i>
+            <h2 id="north">&nbsp;&nbsp;North-East</h2>
+        </div>
+        <div class="dic-parent">
+            <div class="dic-container">Hi, I'm Usman from Hasilpur, Pakistan. I created this website to provide
+                accurate, real-time weather updates with a clean and user-friendly design. You can check the current
+                weather, temperature, humidity, wind speed, and more—all in one place. My goal is to
+                make weather information simple, fast, and accessible for everyone.</div>
+        </div>
+    </div>
+    <button id="more"><i class="fa-solid fa-angle-up"></i> More Information abount website</button>
+    <button id="more1"><i class="fa-solid fa-angle-down"></i> Hide it</button>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
