@@ -269,6 +269,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    outline: none;
 }
 .country-searchbar{
     width: 250px;
@@ -279,6 +280,7 @@ body {
     position: relative;
     z-index: 9999;
     transition: all 0.8s;
+    outline: none;
 }
 .country-searchbar:hover{
     background-color: rgb(246, 246, 246);
